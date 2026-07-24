@@ -1,36 +1,42 @@
 # Changelog
 
+## v3.0.4 — ۱۴۰۴/۰۵/۰۳
+
+### Fixed — Notebook (numpy 2.x support)
+- **Cell 1 (Install)**: removed the `numpy==1.26.4` pin. Modern torch (2.11+ with CUDA 12.8)
+  supports numpy 2.x natively. Forcing numpy<2 was breaking the Colab scientific stack.
+  Now only installs timm, einops, gdown — lets numpy stay at Colab default (2.x).
+- **Cell 10 (Optional Eval)**: fixed `numpy.dtype size changed` binary incompatibility error.
+  Root cause: scikit-image 0.22.0 was pinned but compiled against numpy 1.x, then numpy 2.x
+  was active → Cython binary mismatch. Fix: install LATEST scipy/scikit-image/scikit-learn
+  (all numpy-2 compatible). pysodmetrics installed with `--no-deps` to avoid opencv 5.x
+  version conflict (the code works fine with opencv 5.x).
+
+### Changed — Deliverables (font + figures + layout)
+- **Font migration**: Tahoma → Vazirmatn (modern open-source Persian font). Tahoma was not
+  installed on the system, causing LibreOffice to fall back to DejaVu Sans (poor Persian
+  glyphs, disconnected letters). Vazirmatn is now installed system-wide and used in all
+  docx + pptx files. Persian letters now render with correct cursive joining.
+- **Embedded SALK-Net figures** in University_Report_FA.docx (6 figures):
+  - Fig 1 (Attention Effects) — section 2 (problem definition)
+  - Fig 3 (Overall Framework) — section 4 (SALK-Net architecture)
+  - Fig 5 (DLKA Structure) — section 4.2
+  - Fig 8 (CIEM) — section 4.4
+  - Fig 9 (PR Curves) — section 9 (benchmark results)
+  - Fig 10 (Visual Comparisons) — section 13 (qualitative analysis)
+- **Slide 5 redesigned**: compact innovation cards (TE/DLKA/APL) on top half +
+  SALK-Net architecture figure (Fig 3) on bottom half.
+- All content reviewed for accuracy and SALK-Net focus.
+
 ## v3.0.3 — ۱۴۰۴/۰۵/۰۳
-
-### Fixed
-- **Notebook Cell 1**: numpy pinned to exact 1.26.4 (deterministic, not just `<2`)
-- **Notebook Cell 10 (Optional Eval)**: pinned scipy==1.13.1, scikit-image==0.22.0, scikit-learn==1.4.4
-  to versions compatible with numpy 1.26.4. This fixes `ModuleNotFoundError: No module named 'numpy.strings'`
-  that occurred when py_sod_metrics imported scipy compiled against numpy 2.x.
-  pysodmetrics installed with `--no-deps` to prevent pulling newer scipy.
-
-### Changed — Deliverables (SALK-Net focus)
-- **All deliverable files**: removed every mention of "ZoomNeXt" from report, Q&A, script and slides.
-  The project is now consistently framed around SALK-Net (the studied paper) with empirical evaluation
-  presented as a generic ResNet-50 COD model.
-- **Persian RTL**: added `<w:bidi/>` paragraph-level RTL tags (287 in report) + right alignment +
-  Tahoma complex-script font throughout all docx files. Text is now properly right-aligned.
-- **University_Report_FA.docx**: fully restructured — 18 sections, cover page, organized headings
-  with emerald accent borders, styled tables with zebra striping, SALK-Net architecture section
-  (TE, DLKA, APL, CIEM) as the centerpiece.
-- **Defense_QA_FA.docx**: 16 Q&A pairs organized by category (مقاله SALK-Net، مسئله COD، ارزیابی، TTA،
-  تحلیل شکست، محدودیت‌ها، کارهای آینده، نتیجه‌گیری).
-- **Presentation_Script_FA.docx**: 10-slide speaker script, SALK-Net focused.
-- **Presentation_FA.pptx**: redesigned from 16 slides to 10 compact slides with modern emerald/amber
-  theme — cover, outline, problem, timeline, SALK-Net architecture (3 innovation cards), evaluation
-  model, benchmark results table, failure+TTA, limitations+future, conclusion.
+- Initial SALK-Net focus (removed ZoomNeXt from deliverables), RTL bidi tags, 10-slide pptx
+- Notebook Cell 1 + Cell 10 attempted fix with numpy pinning (INCORRECT — see v3.0.4)
 
 ## v3.0.2 — ۱۴۰۴/۰۵/۰۲
-- Initial purpose-based structure (docs/ project/ run/ deliverables/ github/ results/ archive/)
+- Purpose-based structure
 
 ## v3.0.1 — ۱۴۰۴/۰۵/۰۲
-- Reproducibility docs (REPRODUCIBILITY.md, MODEL_CARD.md, DATASET.md)
+- Reproducibility docs
 
 ## v3.0.0 — ۱۴۰۴/۰۵/۰۱
-- Final frozen results: Sm=0.848, Fw=0.760, MAE=0.037, Em=0.898 (baseline)
-- TTA on 20 representative images: all 4 metrics improved
+- Final frozen results + TTA

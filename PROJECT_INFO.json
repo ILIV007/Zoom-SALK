@@ -1,6 +1,6 @@
 {
   "project": "Zoom-SALK",
-  "version": "v3.0.3",
+  "version": "v3.0.4",
   "title_fa": "تشخیص اشیای استتار‌شده با یادگیری عمیق — تحلیل SALK-Net و ارزیابی تجربی",
   "title_en": "Camouflaged Object Detection with Deep Learning — SALK-Net Analysis and Empirical Evaluation",
   "student": "ایلیا ایروانی",
@@ -10,6 +10,7 @@
   "paper": "SALK-Net (Scientific Reports 2025)",
   "model": "ResNet-50 COD (28,458,084 params)",
   "dataset": "COD10K-Test (390 images evaluated)",
+  "font": "Vazirmatn",
   "results": {
     "baseline": {"Sm": 0.848, "Fw": 0.760, "MAE": 0.037, "Em": 0.898},
     "paper": {"Sm": 0.861, "Fw": 0.768, "MAE": 0.026, "Em": 0.926},

@@ -1,26 +1,29 @@
-# Release Notes — v3.0.3
+# Release Notes — v3.0.4
 
 ## خلاصه
-نسخه نهایی تحویل دانشگاه. سه اصلاح اصلی نسبت به v3.0.2:
+این نسخه سه اصلاح مهم نسبت به v3.0.3 دارد:
 
-### ۱. اصلاح خطای Colab Notebook
-خطای `ModuleNotFoundError: No module named 'numpy.strings'` در Cell 10 (Optional Eval) برطرف شد.
-علت: scipy نصب‌شده با numpy 2.x کامپایل شده بود، سپس downgrade به 1.26.4 آن را می‌شکست.
-راه‌حل: pin کردن scipy==1.13.1، scikit-image==0.22.0، scikit-learn==1.4.2.
+### ۱. حل کامل خطای Colab Notebook
+خطای `numpy.dtype size changed` در Cell 10 حل شد. علت: scikit-image 0.22.0 با numpy 1.x
+کامپایل شده بود اما numpy 2.x فعال بود. راه‌حل: نصب آخرین نسخه scipy/skimage/sklearn
+(سازگار با numpy 2) و pysodmetrics با --no-deps.
 
-### ۲. تمرکز deliverables روی SALK-Net
-تمام mentions نام "ZoomNeXt" از فایل‌های deliverables حذف شد (گزارش، Q&A، اسکریپت، پاورپوینت).
-پروژه اکنون به‌طور یکپارچه حول SALK-Net (مقاله مورد مطالعه) قاب‌بندی شده و ارزیابی تجربی
-به‌عنوان یک مدل COD مبتنی بر ResNet-50 ارائه می‌شود.
+همچنین Cell 1 اصلاح شد: دیگر numpy را به 1.26.4 محدود نمی‌کنیم زیرا torch مدرن (۲٫۱۱)
+از numpy 2.x بومی پشتیبانی می‌کند.
 
-### ۳. اصلاح نگارش فارسی و بازطراحی پاورپوینت
-- افزودن `<w:bidi/>` (RTL paragraph-level) به تمام فایل‌های docx — متن اکنون راست‌چین است.
-- پاورپوینت از ۱۶ اسلاید به ۱۰ اسلاید فشرده بازطراحی شد با تم مدرن (emerald/amber).
-- ساختار گزارش بازسازماندهی شد: ۱۸ بخش با تیترهای رنگی و جداول استایل‌دار.
+### ۲. مهاجرت فونت به Vazirmatn
+تمام فایل‌های docx و pptx از Tahoma به Vazirmatn (فونت فارسی متن‌باز مدرن) تغییر کردند.
+Tahoma روی سیستم نصب نبود و LibreOffice به DejaVu Sans fallback می‌کرد که حروف فارسی را
+به‌صورت جدا جدا نمایش می‌داد. اکنون حروف فارسی با اتصال صحیح (cursive joining) رندر می‌شوند.
 
-## فایل‌های تحویل
-- University_Report_FA.docx / .pdf
-- Presentation_FA.pptx / .pdf (10 اسلاید)
-- Presentation_Script_FA.docx
-- Defense_QA_FA.docx
-- Submission_Checklist.md
+### ۳. افزودن شکل‌های مقاله SALK-Net
+۶ شکل از مقاله SALK-Net در گزارش دانشگاه جای‌گذاری شد:
+- شکل ۱ (تأثیر توجه) — بخش تعریف مسئله
+- شکل ۲ (معماری کلی) — بخش معماری SALK-Net
+- شکل ۳ (ساختار DLKA) — بخش ۴٫۲
+- شکل ۴ (واحد CIEM) — بخش ۴٫۴
+- شکل ۵ (منحنی‌های PR) — بخش نتایج بنچمارک
+- شکل ۶ (مقایسه بصری) — بخش تحلیل کیفی
+
+در پاورپوینت، اسلاید ۵ بازطراحی شد: کارت‌های نوآوری (TE/DLKA/APL) در بالا + شکل معماری
+SALK-Net در پایین.
