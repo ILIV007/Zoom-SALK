@@ -1,0 +1,6 @@
+# Zoom-SALK Inference Requirements (6 packages)
+opencv-python-headless
+timm==0.9.12
+einops
+gdown
+numpy<2

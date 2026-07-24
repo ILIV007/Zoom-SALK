@@ -1,0 +1,3 @@
+# Weights
+Download: gdown 1eN2EtzCKAlqLrN1NlkDi_v17dVnymLoW -O weights/resnet50-zoomnext.pth
+SHA256: e7f958ce379ae709494999d62f489a3bce4cf7c2852f532e7db376abd8119ab9

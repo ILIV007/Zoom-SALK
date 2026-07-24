@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Zoom-SALK: Camouflaged Object Detection using Deep Learning"
+version: "3.0.0"
+date-released: "2026-07-24"
+license: Apache-2.0
+keywords: [camouflaged object detection, ZoomNeXt, SALK-Net, TTA]
+references:
+  - title: "SALK-Net"
+    journal: "Scientific Reports"
+    year: 2025
+    doi: "10.1038/s41598-025-97857-9"
+  - title: "ZoomNeXt"
+    journal: "IEEE TPAMI"
+    year: 2024
+    doi: "10.1109/TPAMI.2024.3417329"

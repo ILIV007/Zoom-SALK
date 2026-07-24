@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Weights (large files)
+*.pth
+*.pt
+*.ckpt
+
+# Datasets
+dataset/
+COD-TestDataset/
+
+# Outputs
+outputs/
+*.log
+
+# Temporary
+*.tmp
+*.bak

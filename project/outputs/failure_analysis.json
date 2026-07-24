@@ -1,0 +1,259 @@
+{
+  "total_images": 390,
+  "failures_count": 19,
+  "failure_categories": {
+    "thin_object": 5,
+    "heavy_camouflage": 1,
+    "low_contrast": 3,
+    "complex_background": 10
+  },
+  "failure_details": {
+    "thin_object": [
+      {
+        "image": "COD10K-CAM-1-Aquatic-13-Pipefish-520.jpg",
+        "animal": "Pipefish",
+        "sm": 0.4608,
+        "wfm": 0.0126,
+        "mae": 0.0548,
+        "em": 0.7209
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-13-Pipefish-602.jpg",
+        "animal": "Pipefish",
+        "sm": 0.4904,
+        "wfm": 0.2226,
+        "mae": 0.1089,
+        "em": 0.5499
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-13-Pipefish-608.jpg",
+        "animal": "Pipefish",
+        "sm": 0.4321,
+        "wfm": 0.105,
+        "mae": 0.1509,
+        "em": 0.8118
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-13-Pipefish-813.jpg",
+        "animal": "Pipefish",
+        "sm": 0.4767,
+        "wfm": 0.0083,
+        "mae": 0.02,
+        "em": 0.6804
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-13-Pipefish-830.jpg",
+        "animal": "Pipefish",
+        "sm": 0.4872,
+        "wfm": 0.0001,
+        "mae": 0.0105,
+        "em": 0.8094
+      }
+    ],
+    "heavy_camouflage": [
+      {
+        "image": "COD10K-CAM-1-Aquatic-11-Octopus-454.jpg",
+        "animal": "Octopus",
+        "sm": 0.4275,
+        "wfm": 0.0043,
+        "mae": 0.1061,
+        "em": 0.3537
+      }
+    ],
+    "low_contrast": [
+      {
+        "image": "COD10K-CAM-1-Aquatic-19-Stingaree-1198.jpg",
+        "animal": "Stingaree",
+        "sm": 0.2846,
+        "wfm": 0.2559,
+        "mae": 0.5997,
+        "em": 0.2256
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-19-Stingaree-1207.jpg",
+        "animal": "Stingaree",
+        "sm": 0.3699,
+        "wfm": 0.0351,
+        "mae": 0.1842,
+        "em": 0.7132
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-20-Turtle-1224.jpg",
+        "animal": "Turtle",
+        "sm": 0.3254,
+        "wfm": 0.3738,
+        "mae": 0.6063,
+        "em": 0.225
+      }
+    ],
+    "complex_background": [
+      {
+        "image": "COD10K-CAM-1-Aquatic-14-ScorpionFish-892.jpg",
+        "animal": "ScorpionFish",
+        "sm": 0.4125,
+        "wfm": 0.0,
+        "mae": 0.1308,
+        "em": 0.5263
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-15-SeaHorse-1067.jpg",
+        "animal": "SeaHorse",
+        "sm": 0.4702,
+        "wfm": 0.0,
+        "mae": 0.0355,
+        "em": 0.9412
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-15-SeaHorse-963.jpg",
+        "animal": "SeaHorse",
+        "sm": 0.445,
+        "wfm": 0.13,
+        "mae": 0.2174,
+        "em": 0.6713
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-15-SeaHorse-977.jpg",
+        "animal": "SeaHorse",
+        "sm": 0.4892,
+        "wfm": 0.0036,
+        "mae": 0.0132,
+        "em": 0.3177
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-15-SeaHorse-990.jpg",
+        "animal": "SeaHorse",
+        "sm": 0.4773,
+        "wfm": 0.0015,
+        "mae": 0.0226,
+        "em": 0.4069
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-15-SeaHorse-992.jpg",
+        "animal": "SeaHorse",
+        "sm": 0.4247,
+        "wfm": 0.0,
+        "mae": 0.094,
+        "em": 0.5463
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-16-Shrimp-1142.jpg",
+        "animal": "Shrimp",
+        "sm": 0.492,
+        "wfm": 0.0079,
+        "mae": 0.0096,
+        "em": 0.3187
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-3-Crab-37.jpg",
+        "animal": "Crab",
+        "sm": 0.4541,
+        "wfm": 0.0746,
+        "mae": 0.0808,
+        "em": 0.6723
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-3-Crab-96.jpg",
+        "animal": "Crab",
+        "sm": 0.4257,
+        "wfm": 0.1811,
+        "mae": 0.1931,
+        "em": 0.4066
+      },
+      {
+        "image": "COD10K-CAM-1-Aquatic-6-Fish-159.jpg",
+        "animal": "Fish",
+        "sm": 0.4464,
+        "wfm": 0.0,
+        "mae": 0.0534,
+        "em": 0.8922
+      }
+    ]
+  },
+  "per_animal_sm": {
+    "BatFish": {
+      "count": 4,
+      "avg_sm": 0.92515,
+      "min_sm": 0.8916
+    },
+    "LeafySeaDragon": {
+      "count": 5,
+      "avg_sm": 0.7369600000000001,
+      "min_sm": 0.5957
+    },
+    "Octopus": {
+      "count": 21,
+      "avg_sm": 0.8958428571428572,
+      "min_sm": 0.4275
+    },
+    "Pagurian": {
+      "count": 6,
+      "avg_sm": 0.7136833333333333,
+      "min_sm": 0.5008
+    },
+    "Pipefish": {
+      "count": 141,
+      "avg_sm": 0.8399971631205675,
+      "min_sm": 0.4321
+    },
+    "ScorpionFish": {
+      "count": 47,
+      "avg_sm": 0.8689893617021277,
+      "min_sm": 0.4125
+    },
+    "SeaHorse": {
+      "count": 55,
+      "avg_sm": 0.8546109090909092,
+      "min_sm": 0.4247
+    },
+    "Shrimp": {
+      "count": 12,
+      "avg_sm": 0.8082999999999999,
+      "min_sm": 0.492
+    },
+    "Slug": {
+      "count": 2,
+      "avg_sm": 0.7850999999999999,
+      "min_sm": 0.6234
+    },
+    "StarFish": {
+      "count": 9,
+      "avg_sm": 0.9237666666666667,
+      "min_sm": 0.722
+    },
+    "Stingaree": {
+      "count": 9,
+      "avg_sm": 0.7395,
+      "min_sm": 0.2846
+    },
+    "ClownFish": {
+      "count": 5,
+      "avg_sm": 0.86006,
+      "min_sm": 0.6794
+    },
+    "Turtle": {
+      "count": 4,
+      "avg_sm": 0.78555,
+      "min_sm": 0.3254
+    },
+    "Crab": {
+      "count": 29,
+      "avg_sm": 0.8665689655172414,
+      "min_sm": 0.4257
+    },
+    "Crocodile": {
+      "count": 7,
+      "avg_sm": 0.9049142857142857,
+      "min_sm": 0.7284
+    },
+    "CrocodileFish": {
+      "count": 3,
+      "avg_sm": 0.8085666666666667,
+      "min_sm": 0.6131
+    },
+    "Fish": {
+      "count": 31,
+      "avg_sm": 0.8566709677419355,
+      "min_sm": 0.4464
+    }
+  }
+}
