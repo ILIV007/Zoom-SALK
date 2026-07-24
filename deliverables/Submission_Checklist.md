@@ -1,18 +1,18 @@
-# چک‌لیست تحویل دانشگاه — Zoom-SALK v3.0.4
+# چک‌لیست تحویل دانشگاه — Zoom-SALK v3.0.5
 
 | # | فایل | وضعیت |
 |---|------|--------|
 | ۱ | University_Report_FA.docx | ✅ |
 | ۲ | University_Report_FA.pdf | ✅ |
-| ۳ | Presentation_FA.pptx | ✅ |
+| ۳ | Presentation_FA.pptx (۱۴ اسلاید) | ✅ |
 | ۴ | Presentation_FA.pdf | ✅ |
-| ۵ | Presentation_Script_FA.docx | ✅ |
+| ۵ | Presentation_Script_FA.docx (۱۴ اسلاید) | ✅ |
 | ۶ | Defense_QA_FA.docx | ✅ |
 
 **دانشجو:** ایلیا ایروانی | **استاد:** میلاد سلطانی | **درس:** مبانی بینایی ماشین | **نیمسال:** دوم ۱۴۰۴–۱۴۰۵
 
 **موضوع:** تحلیل معماری SALK-Net و ارزیابی تجربی تشخیص اشیای استتار‌شده
 
-**فونت:** Vazirmatn | **شکل‌ها:** ۶ شکل از مقاله SALK-Net
+**فونت:** Vazirmatn | **شکل‌ها:** ۶ شکل از مقاله SALK-Net در گزارش + ۴ شکل در پاورپوینت
 
 **وضعیت: آماده تحویل** ✅
