@@ -16,16 +16,6 @@ This project combines theoretical analysis of **SALK-Net** (Scientific Reports, 
 
 > **SALK-Net and ZoomNeXt solve the same Computer Vision problem (Camouflaged Object Detection) using different architectures. Due to the availability of an official implementation and pretrained weights, ZoomNeXt is selected as the practical implementation framework.**
 
----
-
-## 👥 Authors
-
-| Role | Name |
-|------|------|
-| Student | ایلیا ایروانی (Ilya Irvani) |
-| Supervisor | میلاد سلطانی (Milad Soltani) |
-| Course | مبانی بینایی ماشین (Fundamentals of Computer Vision) |
-| Semester | نیمسال دوم ۱۴۰۴-۱۴۰۵ |
 
 ---
 
